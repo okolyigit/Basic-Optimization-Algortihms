@@ -1,5 +1,9 @@
 # Basic Optimization Algorithms
 
-1. Newton_Powell.py:
+A repository containing basic optimization algorithms 
 
-This code is for finding minimum point of Powell Function with Newton-Raphson Algorithm. 
+1. Newton's Method:
+
+2. Conjugate Direction Methods:
+
+
