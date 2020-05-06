@@ -39,5 +39,8 @@ print('inv F(0)', linalg.inv(fsecond(x0,y0,z0,t0)))
 
 for i in range(maxiter):
       ([x1,y1,z1,t1])= ([x0,y0,z0,t0])- linalg.inv(fsecond(x0,y0,z0,t0)).dot(fprime(x0,y0,z0,t0))
+      if (fprime(x1,y1,z1,t1)[0]==0 and fprime(x1,y1,z1,t1)[1]==0 and fprime(x1,y1,z1,t1)[2]==0 and fprime(x1,y1,z1,t1)[3]==0):
+           print('Reached to local minimum.')
+           break
       print(i+1,'. iterasyon',f(x1,y1,z1,t1))
       [x0,y0,z0,t0]=[x1,y1,z1,t1]
