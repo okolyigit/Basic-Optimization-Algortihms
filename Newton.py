@@ -41,3 +41,5 @@ for i in range(maxiter):
            break
       print(i+1,'. iterasyon',f(x1,y1,z1,t1))
       [x0,y0,z0,t0]=[x1,y1,z1,t1]
+print('The point that Minimum value is obtained:')
+print((round(x0,4),round(y0,4),round(z0,4),round(t0,4)))
