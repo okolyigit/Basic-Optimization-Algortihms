@@ -12,7 +12,7 @@ def f(x,y,z,t):
 
 #Initialisation
 (x0,y0,z0,t0)=(3,-1,0,1)
-maxiter=50
+maxiter=30
 
 #First Derivative of Objective Function
 def fprime(x,y,z,t):
@@ -29,13 +29,10 @@ def fsecond(x,y,z,t):
             [-120*(x-t)**2, 0, -10, 10+120*(x-t)**2]));
 
 #main		                     
-print('f(0)=',f(x0,y0,z0,t0))
-print('')
-print('g(0)=',fprime(x0,y0,z0,t0))
-print('')
-print('F(0)=',fsecond(x0,y0,z0,t0))
-print('')
-print('inv F(0)', linalg.inv(fsecond(x0,y0,z0,t0)))
+print('f(0)=',f(x0,y0,z0,t0),'\n')
+print('g(0)=',fprime(x0,y0,z0,t0),'\n')
+print('F(0)=',fsecond(x0,y0,z0,t0),'\n')
+print('inv F(0)', linalg.inv(fsecond(x0,y0,z0,t0)),'\n')
 
 for i in range(maxiter):
       ([x1,y1,z1,t1])= ([x0,y0,z0,t0])- linalg.inv(fsecond(x0,y0,z0,t0)).dot(fprime(x0,y0,z0,t0))
