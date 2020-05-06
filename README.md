@@ -6,6 +6,4 @@ A repository containing basic optimization algorithms for finding minimum point 
 
 2. Newton's Method
 
-3. Conjugate Direction Methods
-
-
+3. Conjugate Direction Method
